@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find the perfect laptop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Laptop Finder</title>
+</head>
+<body>
+
+<a href="welcome.html" id="backBtn">←</a>
+
+<div class="container">
+  <h1 style="color:#0f969C;">Find Your Perfect Laptop</h1>
+  <p id="resultCount">Loading laptops...</p>
+
+  <div class="main-content">
+    <div class="filters-panel">
+
+      <div class="filters-header">
+        <h2>Filter Laptops</h2>
+        <button id="resetAll" class="reset-btn">Clear All</button>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group-label">Job Category</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Basic Budget"><span>💼 Basic Budget</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Student"><span>🎓 Student / Office</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Business"><span>📊 Business</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Creative"><span>🎨 Creative / Design</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Gaming"><span>🎮 Gaming</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="High-end Gaming"><span>🕹️ High-end Gaming</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Entry Gaming"><span>👾 Entry Gaming</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="2 in 1"><span>🔄 2-in-1 Convertible</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Premium Ultrabook"><span>✨ Premium Ultrabook</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Professional"><span>💻 Professional</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="usage" value="Engineering"><span>⚙️ Engineering</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group-label">💾 Storage</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="storage" value="256"><span>📁 256GB+</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="storage" value="512"><span>📂 512GB+</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="storage" value="1024"><span>🗄️ 1TB+</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group-label">🧠 RAM</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="ram" value="4"><span>4GB+</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="ram" value="8"><span>8GB+</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="ram" value="16"><span>🚀 16GB+</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="ram" value="32"><span>⚡ 32GB+</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group-label">🔧 CPU</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="Intel Core i3"><span>🔵 Intel i3</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="Intel Core i5"><span>🔵 Intel i5</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="Intel Core i7"><span>🔵 Intel i7</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="Intel Core i9"><span>🔵 Intel i9</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="AMD Ryzen"><span>🔴 AMD Ryzen</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="cpu" value="Apple M"><span>🍎 Apple M-Series</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group-label">💰 Price Budget</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="priceRange" value="Budget"><span>💵 Budget (Under ₪2,000)</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="priceRange" value="midrange"><span>💳 Midrange (₪2,000-3,500)</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="priceRange" value="upper midrange"><span>💎 Upper Midrange (₪3,500-5,000)</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="priceRange" value="premium"><span>👑 Premium (₪5,000+)</span></label>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="laptop-list" id="laptopList"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

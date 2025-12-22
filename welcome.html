@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find the perfect laptop for your needs">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Laptop Finder - Welcome</title>
+</head>
+<body>
+
+<div class="welcome-container" id="welcomeContainer">
+  <h1 class="welcome-title">Welcome to Laptop Finder</h1>
+  <p class="welcome-subtitle">
+    Let's find a laptop that fits your needs — fast and simple.
+  </p>
+  <button class="welcome-btn" id="startBtn">Let's go</button>
+</div>
+
+<script>
+  document.getElementById("startBtn").onclick = () => {
+    document.getElementById("welcomeContainer").classList.add("fade-out");
+    setTimeout(() => location.href = "main.html", 400);
+  };
+</script>
+
+</body>
+</html>
